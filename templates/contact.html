@@ -1,14 +1,171 @@
-<h1>Contact Page</h1>
-<div>
-    <form action="contacto.php" method="POST" class="flex flex-column justify-content-center my-3 gap-1">
-        <input type="text" name="nombre" placeholder="Nombre">
-        <input type="email" name="correo" placeholder="Correo electrónico">
-        <input type="text" name="asunto" placeholder="Asunto">
-        <textarea name="mensaje" placeholder="Mensaje"></textarea>
-        <input type="submit" value="Enviar">
-      </form>
-    <div class="cardContainer" style = "margin: 0 auto;">
-      <p>Dirección...</p>
-      <p>Teléfono...</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    
+    <!-- CSS DIRECTO EN EL HTML -->
+    <style>
+        /* ======== ESTILOS PARA PÁGINA DE CONTACTO ======== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Contenedor general */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, #007BFF, #00C6FF);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            color: white;
+        }
+
+        /* Formulario */
+        .contact-form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            font-weight: bold;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #666;
+            font-weight: normal;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #FFDD44;
+            box-shadow: 0 0 8px rgba(255, 221, 68, 0.6);
+            transform: scale(1.02);
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: none;
+        }
+
+        /* Botón */
+        .contact-form input[type="submit"] {
+            background: #FFDD44;
+            color: #333;
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background: #FFC107;
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.6);
+            transform: scale(1.05);
+        }
+
+        /* Información de contacto */
+        .contact-info {
+            flex: 1;
+            font-size: 1rem;
+            color: white;
+            max-width: 400px;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .contact-info strong {
+            color: #FFDD44;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                padding: 1.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="contact-title">Contact Page</h1>
+
+    <div class="contact-container">
+        <form action="contacto.php" method="POST" class="contact-form">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="text" name="asunto" placeholder="Asunto" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Address:</strong> Vedruna street 123, Seville, Spain</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Email:</strong> contact@empresa.com</p>
+        </div>
     </div>
-</div>
+
+</body>
+</html>
