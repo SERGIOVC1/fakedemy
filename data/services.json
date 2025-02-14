@@ -1,51 +1,50 @@
 [
-    {
-       "src": "./img/-1.jpg",
-       "title": "Office Suite Skills",
-       "desc": "Proficiency in office software including word processors, spreadsheets, and database programs.",
-       "cat": "Productivity"
+   {
+      "src": "./img/-1.jpg",
+      "title": "Business Software Mastery",
+      "desc": "Expertise in office tools, including document processors, spreadsheets, and database applications.",
+      "cat": "Efficiency"
+   },
+   {
+       "src": "./img/-2.png",
+       "title": "Complete Office Toolkit",
+       "desc": "All-in-one software suite designed for seamless productivity and workflow management.",
+       "cat": "Efficiency"
     },
     {
-        "src": "./img/-2.png",
-        "title": "Office Package",
-        "desc": "Comprehensive office software package for productivity and business operations.",
-        "cat": "Productivity"
-     },
+     "src": "./img/-3.webp",
+     "title": "Professional Web Hosting",
+     "desc": "Fast, secure, and reliable website hosting with exceptional uptime and customer support.",
+     "cat": "OnlineServices"
+    }, 
+    {
+     "src": "./img/-4.png",
+     "title": "Cloud Infrastructure Services",
+     "desc": "Flexible and scalable cloud solutions tailored to business needs.",
+     "cat": "VirtualSolutions"
+     },    
      {
-      "src": "./img/-3.webp",
-      "title": "Website Hosting",
-      "desc": "Reliable and secure website hosting solutions with high uptime and support.",
-      "cat": "Web"
+     "src": "./img/-5.jpg",
+     "title": "Advanced Cybersecurity",
+     "desc": "Comprehensive security services, including threat monitoring and encrypted data protection.",
+     "cat": "Security"
      }, 
      {
-      "src": "./img/-4.png",
-      "title": "Cloud Computing",
-      "desc": "Scalable and flexible cloud computing solutions for businesses.",
-      "cat": "Cloud"
-      },    
-      {
-      "src": "./img/-5.jpg",
-      "title": "Cybersecurity Solutions",
-      "desc": "Comprehensive cybersecurity services including threat detection and data encryption.",
-      "cat": "Security"
-      }, 
-      {
-         "src": "./img/-6.png",
-         "title": "Email Hosting",
-         "desc": "Secure and professional email hosting solutions with custom domains.",
-         "cat": "Web"
-      },
-      {
-         "src": "./img/-7.png",
-         "title": "Data Visualization & Charts",
-         "desc": "Learn how to create effective data visualizations, charts, and graphs for business and analytics.",
-         "cat": "Data"
-      },
-      {
-         "src": "./img/-8.png",
-         "title": "Smartphone App Development",
-         "desc": "Develop mobile applications for iOS and Android using modern frameworks and tools.",
-         "cat": "Mobile"
-      }
-
+        "src": "./img/-6.png",
+        "title": "Enterprise Email Hosting",
+        "desc": "Secure and professional email solutions with personalized domain support.",
+        "cat": "HostingSV"
+     },
+     {
+        "src": "./img/-7.png",
+        "title": "Data Insights & Visualization",
+        "desc": "Create powerful data charts and visualizations for enhanced business intelligence.",
+        "cat": "Analytics"
+     },
+     {
+        "src": "./img/-8.png",
+        "title": "Mobile App Creation",
+        "desc": "Design and develop mobile apps for iOS and Android using cutting-edge technologies.",
+        "cat": "SoftwareDevelopment"
+     }
 ]
